@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>я-гуль.com </title>
+    </head>
+    <style>
+        body {
+            background-image: url(59-7.jpg);
+        }
+    </style>
+    <body>
+        <style>
+
+* {
+    scroll-behavior: smooth;
+}
+
+            .a{
+                text-align: center;
+                color: antiquewhite;
+                font-size: 3rem;
+                font-family: Arial Black;
+            }
+        </style>
+        <div class="a">
+            
+        </div>
+        <audio src="ягуль.mp3" autoplay></audio>
+    </body>
+    <script>
+var el = document.querySelector('.a');
+var i = 1000;
+var intervalId = setInterval(function(){
+el.innerHTML += i+'<br/>';
+    
+if(i>0)
+{
+i-=7;
+}
+else{
+clearInterval(intervalId);
+}
+    
+window.scrollTo(0,document.body.scrollHeight);
+
+}, 500);
+
+
+    
+        
+          </script>
+</html>
